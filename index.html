@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="src/building.js"></script>
+        <script src="src/upgrade.js"></script>
+        <script src="src/wippedcream.js"></script>
+        <script src="src/softserve.js"></script>
+        <script src="src/workers.js"></script>
+        <script src="src/main.js"></script>
+        <title>Ice Cream Shop</title>
+    </head>
+    <body>
+        <header>
+            <h1>Ice Cream Shop</h1>
+            <h2>
+                
+            </h2>
+        </header>
+
+        <div class="outer">
+            <div class="click">
+                <h3>Score: <span class="score" id="score">0</span></h3>
+
+                <button type="button" onclick="scorePlusPlus()">Start Machine</button>
+            </div>
+
+            <div class="store">
+                <div class="buildings">
+                    <div class="store-title">
+                        <h4>Buildings:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyMachine"
+                        onclick="machine.purchase()"
+                    >
+                        Buy Machine
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyShop"
+                        onclick="shop.purchase()"
+                    >
+                        Buy shop
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyFlavor"
+                        onclick="flavor.purchase()"
+                    >
+                        Buy flavor
+                    </button>
+                    
+                    <button
+                    class="button"
+                    type="button"
+                    id="buySprinkles"
+                    onclick="sprinkles.purchase()"
+                >
+                    Buy Sprinkels
+                </button>
+
+                <button
+                        class="button"
+                        type="button"
+                        id="buyCashier"
+                        onclick="cashier.purchase()"
+                    >
+                        Buy Cashier
+                    </button>
+                    
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyChocolate"
+                        onclick="chocolate.purchase()"
+                    >
+                        Buy Chocolate
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyWhippedcream"
+                        onclick="whippedcream.purchase()"
+                    >
+                        Buy whippedcream
+                    </button>
+
+                    <button
+                    class="button"
+                    type="button"
+                    id="buyMilkshake"
+                    onclick="milkshake.purchase()"
+                >
+                    Buy milkshake
+                </button>
+
+                    <!-- Add more building buttons here -->
+                </div>
+                <div class="upgrades">
+                    <div class="store-title">
+                        <h4>Upgrades:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buySoftServeI"
+                        onclick="softServe1.purchase()"
+                    >
+                        Buy Soft Serve
+                   
+                    </button>
+
+                    <button
+                    class="button"
+                    type="button"
+                    id="buyWorkersI"
+                    onclick="workers1.purchase()"
+                >
+                    Buy Workers
+                    
+                </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
